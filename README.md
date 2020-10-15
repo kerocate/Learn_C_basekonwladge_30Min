@@ -109,6 +109,28 @@ include是包含的意思。
 变量声明格式: 修饰 类型 变量名;
 变量声明且赋值格式：修饰 类型 变量名 = 数据;
 
+修饰有很多 其中常用的是 long、const
+
+const表示后面的数据是常量。
+
+long表示后面数据内存空间是加长的（在现在的计算机里面，long int、long、int应该都是指4byte的整数）
+
+##### 作用域
+这是啥呢？ 这就是爱吧。<br>
+
+好吧作用域表示变量的作用范围，非常直观的名字才对。<br>
+
+有局部，全局，形参三种情况，这里只介绍局部和全局。<br>
+
+局部变量是指在块状代码内生效，出去就不知道何去何从的；<br>
+全局变量是指在main之上#include以下的变量，不论到哪里都是有效的；<br>
+
+注意：如果你在局部又定义了一个和全局同名的变量，然后再访问，如果没有报错的话，应该是只能 访问/操作 同名的局部变量。<br>
+
+详情请见：https://www.runoob.com/cprogramming/c-scope-rules.html
+
+有些错误会莫名其妙因为作用域的原因而导致，请务必把这个记在心中。
+
 #### 数据类型
 我们知道计算机中数据都是用二进制来储存和处理的，所以我们就要以二进制的方式去理解。
 
@@ -127,15 +149,17 @@ include是包含的意思。
 试想：如果你有20个变量，每个变量类型都有，每个变量必须要赋值才能够使用。你怎么样把它写的好看？
 
 
-### 构成体（这个是我为了让大家更快理解C语言自己抽象的概念）
+### 构成体（这个是我为了让大家更快理解C语言自己抽象的概念，实际上并不存在）
 构成体呢，就是构成块状语句集合的一个抽象概念，干讲很累的，所以————上代码！
 
 ```C
 构成体第一种：
 
   keyword(表达式){
+  
     代码;
     代码;
+    
   }
   
   //这个for、if、while都是这样的
@@ -144,19 +168,45 @@ include是包含的意思。
 构成体第二种：
 
   keyword name(表达式){
+  
     代码;
     代码;
+    
   }
   
-  //目前阶段只需要知道函数是这样的就好了
+  //函数是这样的
   
 //////////////////////////////////////////
 构成体第三种：
 
   keyword{
+  
     代码;
     代码;
+    
   }(表达式)
   
   //do-while是这样的
 ```
+想知道更多请去：https://www.runoob.com/cprogramming/c-basic-syntax.html
+
+### 运算符
+
+好这个不讲，直接上链接（偷懒跑路）：https://www.runoob.com/cprogramming/c-operators.html
+
+好吧讲一下：
+
+“=” 是赋值运算符，
+“==” 才是判断相等的运算符！
+
+“/” 除法在int型里面是只要商的整数部分的，在float型里面是保留小数的。
+
+别错了！
+
+### 条件判断 https://www.runoob.com/cprogramming/c-decision.html
+
+### 循环结构 https://www.runoob.com/cprogramming/c-loops.html
+
+### 数组 https://www.runoob.com/cprogramming/c-arrays.html
+
+### 函数 https://www.runoob.com/cprogramming/c-functions.html
