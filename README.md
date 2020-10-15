@@ -232,4 +232,38 @@ i++; 指的是该条语句之后的操作访问 i 时，i = i + 1
 
 ### 数组 https://www.runoob.com/cprogramming/c-arrays.html
 
+注意下标n是从零开始的。
+
 ### 函数 https://www.runoob.com/cprogramming/c-functions.html
+
+注意函数写在main之后要现在main前声明。
+
+（这下30分钟内能速成了吧？）
+
+### 简单输入输出 https://www.runoob.com/cprogramming/c-input-output.html
+
+printf 其实是 print function，
+
+缩写就叫printf
+
+printf("格式化字符",对应格式化字符的参数);
+
+scanf 其实就是 scan function，
+
+缩写就叫scanf
+
+scanf("格式化字符",&对应格式化字符的参数);
+
+& 是什么？
+& 是运算符的一种，叫做寻址符。
+比如：
+&a
+就会找到内存中a所在的 __内存地址__
+
+在scanf里面就是揪出变量a的地址，然后再把数据塞进去。
+
+因为c语言里面有作用域的限制，所以跨域访问变量只能使用 __指针__ 的方式了
+
+& 就是指针操作里面的常用运算符，同时还有 *
+
+喜欢的同学可以自行学习指针： https://www.runoob.com/cprogramming/c-pointers.html
