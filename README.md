@@ -269,3 +269,10 @@ scanf("格式化字符",&对应格式化字符的参数);
 & 就是指针操作里面的常用运算符，同时还有 *
 
 喜欢的同学可以自行学习指针： https://www.runoob.com/cprogramming/c-pointers.html
+
+最后，我懒得写了。
+然后，写的可能有很多问题，希望懂的人能直接在issues里面指出，或者说提醒我都可以。
+
+最后最后的最后，附上一篇给小同学们的好资源：
+
+如何科学有效的提问 ：https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md
