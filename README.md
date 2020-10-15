@@ -205,7 +205,30 @@ long表示后面数据内存空间是加长的（在现在的计算机里面，l
 
 ### 条件判断 https://www.runoob.com/cprogramming/c-decision.html
 
+条件判断很简单，判断()中的表达式是否为1，如果是就执行{}的内容，当然switch除外。
+
+switch比较特别，建议大家看看书和链接，我这里不好细讲（反正我自己也不怎么用）
+
+switch基础内容：https://www.runoob.com/cprogramming/c-switch.html
+
+switch妙用：https://segmentfault.com/a/1190000007064507
+
+switch判断范围：https://blog.csdn.net/weixin_43342054/article/details/85596192
+
+这里还有一个“三元表达式”：
+
+(条件)?(为真执行):(为假执行)
+
+其实就是同ifel是一个道理的。
+
 ### 循环结构 https://www.runoob.com/cprogramming/c-loops.html
+
+这是在vsc上直接对代码讲的。
+
+注意 i++ 和 ++i 的区别：
+
+i++; 指的是该条语句之后的操作访问 i 时，i = i + 1
+++i; 指的是该条语句时 i 就已经时 i = i + 1 了
 
 ### 数组 https://www.runoob.com/cprogramming/c-arrays.html
 
